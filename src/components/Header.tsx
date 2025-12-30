@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
 
@@ -33,6 +33,16 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            {/* Instagram Link */}
+            <a
+              href="https://www.instagram.com/6m_clothing_brand/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
+              <span className="hidden lg:inline">@6M_clothing_brand</span>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -61,6 +71,17 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            {/* Instagram Link Mobile */}
+            <a
+              href="https://www.instagram.com/6m_clothing_brand/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-lg font-medium text-muted-foreground hover:text-primary transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Instagram className="h-5 w-5" />
+              <span>Follow @6M_clothing_brand</span>
+            </a>
           </nav>
         </div>
       )}

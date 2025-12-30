@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* 6M Streetwear Design System - Red/Black Street Vibe */
 
@@ -113,6 +113,10 @@
 @layer utilities {
   .font-display {
     font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .font-graffiti {
+    font-family: 'Bubblegum Sans', cursive;
   }
 
   .text-glow {

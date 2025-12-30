@@ -1,35 +1,41 @@
-import { toast } from "sonner";
+import { useState } from "react";
 import ProductCard, { Product } from "./ProductCard";
+import CheckoutModal from "./CheckoutModal";
 
 const products: Product[] = [
   {
-    id: "hoodie-001",
-    name: "6M Classic Hoodie",
-    price: 79.99,
+    id: "snapback-001",
+    name: "6M Snapback Hat",
+    price: 20,
     image: "/placeholder.svg",
-    category: "Hoodie",
+    category: "Hat",
+    tagline: "Official 6 Motors drop",
   },
   {
     id: "tshirt-001",
-    name: "6M Essential Tee",
-    price: 39.99,
+    name: "6M Unisex T-Shirt",
+    price: 27,
     image: "/placeholder.svg",
     category: "T-Shirt",
+    tagline: "Official 6 Motors drop",
   },
   {
-    id: "cap-001",
-    name: "6M Street Cap",
-    price: 29.99,
+    id: "hoodie-001",
+    name: "6M Unisex Hoodie",
+    price: 40,
     image: "/placeholder.svg",
-    category: "Cap",
+    category: "Hoodie",
+    tagline: "Official 6 Motors drop",
   },
 ];
 
 const ShopSection = () => {
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
+
   const handleBuy = (product: Product) => {
-    toast.info(`Checkout coming soon!`, {
-      description: `${product.name} - $${product.price.toFixed(2)}`,
-    });
+    setSelectedProduct(product);
+    setIsCheckoutOpen(true);
   };
 
   return (
@@ -59,6 +65,16 @@ const ShopSection = () => {
           </p>
         </div>
       </div>
+
+      {/* Checkout Modal */}
+      <CheckoutModal
+        product={selectedProduct}
+        isOpen={isCheckoutOpen}
+        onClose={() => {
+          setIsCheckoutOpen(false);
+          setSelectedProduct(null);
+        }}
+      />
     </section>
   );
 };

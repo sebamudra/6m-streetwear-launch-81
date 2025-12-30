@@ -14,7 +14,7 @@ const AboutSection = () => {
           {/* Brand Story */}
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              <span className="text-foreground font-semibold">6M</span> is more than clothing. It's a mindset.
+              <span className="text-foreground font-semibold">6 Motors</span> is more than clothing. It's a mindset.
             </p>
             <p>
               Built from the streets, designed for people who don't follow trends — 
