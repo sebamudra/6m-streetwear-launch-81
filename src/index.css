@@ -1,8 +1,9 @@
+/* Import basic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* 6M Streetwear Design System - Red/Black Street Vibe */
 
@@ -112,11 +113,19 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
   }
 
   .font-graffiti {
-    font-family: 'Bubblegum Sans', cursive;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Normal heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
   }
 
   .text-glow {

@@ -20,11 +20,13 @@ const ProductCard = ({ product, onBuy }: ProductCardProps) => {
     <div className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300">
       {/* Product Image */}
       <div className="aspect-square bg-secondary relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="font-display text-6xl text-muted-foreground/30 group-hover:text-primary/30 transition-colors">
-            6M
-          </span>
-        </div>
+        {/* Product image (served from public/) */}
+        <img
+          src={`/${product.image}`}
+          alt={product.name}
+          className="w-full h-full object-cover"
+        />
+
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors" />
       </div>

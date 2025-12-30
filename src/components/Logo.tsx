@@ -23,17 +23,16 @@ const textSizeClasses = {
 };
 
 const Logo = ({ className, size = "md", variant = "image" }: LogoProps) => {
-  // Image-based logo with graffiti style placeholder
+  // Image/text-based logo (graffiti bubble style)
   if (variant === "image") {
     return (
       <div className={cn("relative flex items-center justify-center", sizeClasses[size], className)}>
-        {/* Placeholder for the graffiti logo - user can replace with actual image */}
         <div className={cn(
           "flex items-center justify-center font-display tracking-tight select-none",
           textSizeClasses[size]
         )}>
           <span className="text-foreground">6</span>
-          <span className="text-primary">M</span>
+          <span className="text-primary ml-2">Motors</span>
         </div>
       </div>
     );
@@ -43,7 +42,7 @@ const Logo = ({ className, size = "md", variant = "image" }: LogoProps) => {
   return (
     <div className={cn("font-display tracking-tight select-none", textSizeClasses[size], className)}>
       <span className="text-foreground">6</span>
-      <span className="text-primary">M</span>
+      <span className="text-primary ml-2">Motors</span>
     </div>
   );
 };
