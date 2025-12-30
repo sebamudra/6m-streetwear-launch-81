@@ -23,13 +23,21 @@ const HeroSection = () => {
           <Logo size="hero" className="text-glow" />
         </div>
 
-        {/* Tagline */}
+        {/* Brand Name */}
         <h1 
+          className="mt-2 font-display text-3xl md:text-5xl lg:text-6xl text-foreground tracking-wider animate-fade-in"
+          style={{ animationDelay: "0.2s" }}
+        >
+          6 MOTORS
+        </h1>
+
+        {/* Tagline */}
+        <p 
           className="mt-4 text-lg md:text-2xl font-light tracking-[0.3em] uppercase text-muted-foreground animate-fade-in"
           style={{ animationDelay: "0.3s" }}
         >
           Modern streetwear. Real style.
-        </h1>
+        </p>
 
         {/* CTA Button */}
         <div 
