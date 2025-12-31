@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { ShoppingBag } from "lucide-react";
 
@@ -6,6 +7,7 @@ export interface Product {
   name: string;
   price: number;
   image: string;
+  hoverImage?: string;
   category: string;
   tagline: string;
 }
@@ -16,15 +18,20 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onBuy }: ProductCardProps) => {
+  const [isHovering, setIsHovering] = useState(false);
   return (
     <div className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300">
       {/* Product Image */}
-      <div className="aspect-square bg-secondary relative overflow-hidden">
+      <div 
+        className="aspect-square bg-secondary relative overflow-hidden"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         {/* Product image (served from public/) */}
         <img
-          src={`/${product.image}`}
+          src={`/${isHovering && product.hoverImage ? product.hoverImage : product.image}`}
           alt={product.name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-all duration-300"
         />
 
         {/* Hover overlay */}

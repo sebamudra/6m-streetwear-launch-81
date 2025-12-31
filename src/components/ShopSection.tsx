@@ -16,6 +16,7 @@ const products: Product[] = [
     name: "6M Unisex T-Shirt",
     price: 27,
     image: "tshirt.png",
+    hoverImage: "tshirt-hover.png",
     category: "T-Shirt",
     tagline: "Official 6 Motors drop",
   },
