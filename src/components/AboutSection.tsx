@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
-          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-8">
+          <h2 className="font-funkybubble text-5xl md:text-7xl text-foreground mb-8">
             THE <span className="text-primary">MINDSET</span>
           </h2>
 

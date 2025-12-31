@@ -56,7 +56,7 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="font-graffiti text-5xl md:text-7xl text-primary mb-4">
+            <h2 className="font-funkybubble text-5xl md:text-7xl text-primary mb-4">
               GET IN TOUCH
             </h2>
             <p className="text-muted-foreground text-lg">

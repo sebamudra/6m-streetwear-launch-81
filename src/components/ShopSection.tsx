@@ -43,7 +43,7 @@ const ShopSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-4">
+          <h2 className="font-funkybubble text-5xl md:text-7xl text-foreground mb-4">
             THE DROP
           </h2>
           <p className="text-muted-foreground text-lg max-w-md mx-auto">

@@ -32,7 +32,7 @@ const Logo = ({ className, size = "md", variant = "image" }: LogoProps) => {
           textSizeClasses[size]
         )}>
           <span className="text-foreground">6</span>
-          <span className="text-primary ml-2">Motors</span>
+          <span className="text-primary ml-2">M</span>
         </div>
       </div>
     );
@@ -42,7 +42,7 @@ const Logo = ({ className, size = "md", variant = "image" }: LogoProps) => {
   return (
     <div className={cn("font-display tracking-tight select-none", textSizeClasses[size], className)}>
       <span className="text-foreground">6</span>
-      <span className="text-primary ml-2">Motors</span>
+      <span className="text-primary ml-2">M</span>
     </div>
   );
 };

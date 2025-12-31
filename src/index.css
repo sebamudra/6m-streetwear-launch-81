@@ -1,5 +1,6 @@
 /* Import basic fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -118,8 +119,13 @@
   }
 
   .font-graffiti {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+  }
+
+  .font-funkybubble {
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
   }
 
   /* Normal heading styles */

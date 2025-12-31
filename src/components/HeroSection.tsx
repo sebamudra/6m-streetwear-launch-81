@@ -25,10 +25,10 @@ const HeroSection = () => {
 
         {/* Brand Name */}
         <h1 
-          className="mt-2 font-display text-3xl md:text-5xl lg:text-6xl text-foreground tracking-wider animate-fade-in"
+          className="mt-2 font-funkybubble text-3xl md:text-5xl lg:text-6xl text-foreground tracking-wider animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          6 MOTORS
+          6M
         </h1>
 
         {/* Tagline */}
